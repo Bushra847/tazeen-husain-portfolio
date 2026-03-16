@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tazeen Husain | Educator Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #FDFCFB; overflow-x: hidden; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+
+        /* Animation Keyframes */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes imageReveal {
+            from { opacity: 0; transform: scale(1.05); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* Utility Classes for Animations */
+        .animate-up {
+            opacity: 0;
+            animation: fadeInUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        .animate-image {
+            opacity: 0;
+            animation: imageReveal 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-serif font-bold tracking-tight text-gray-900">
+                Tazeen Husain <span class="text-xs uppercase tracking-[0.2em] font-sans font-light block text-gray-500">Educator</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-xs uppercase tracking-widest font-semibold text-gray-600">
+                <a href="index.html" class="text-black border-b border-black pb-1">Home</a>
+                <a href="qualifications.html" class="hover:text-black transition">Qualifications</a>
+                <a href="standards.html" class="hover:text-black transition">Standards</a>
+                <a href="portfolio.html" class="hover:text-black transition">Teaching Portfolio</a>
+                <a href="contact.html" class="hover:text-black transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-16">
+        <div class="md:w-3/5 space-y-8">
+            <div class="animate-up">
+                <h1 class="text-5xl md:text-7xl font-serif leading-tight text-gray-900">
+                    Welcome! I’m <br><span class="italic font-normal">Tazeen Husain</span>.
+                </h1>
+            </div>
+            
+            <div class="animate-up delay-1">
+                <p class="text-xl md:text-2xl text-gray-600 leading-relaxed font-light">
+                    An Early Childhood and Elementary Educator passionate about <span class="text-gray-900 font-medium border-b border-gray-200">play-based</span> and <span class="text-gray-900 font-medium border-b border-gray-200">inclusive learning</span>.
+                </p>
+            </div>
+
+            <div class="animate-up delay-2">
+                <p class="text-gray-500 leading-loose max-w-lg text-lg">
+                    With experience in public and Islamic schools, I integrate technology and differentiated instruction to support students’ growth. I am committed to creating learning environments that are engaging, equitable, and responsive to each child’s needs.
+                </p>
+            </div>
+            
+            <div class="pt-4 animate-up delay-3">
+                <a href="qualifications.html" class="group inline-flex items-center gap-4 bg-gray-900 text-white px-10 py-5 rounded-full text-sm font-bold tracking-[0.1em] uppercase hover:bg-gray-800 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    View My Qualifications
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="md:w-2/5 relative animate-image">
+            <div class="absolute -bottom-6 -right-6 w-full h-full border border-gray-200 rounded-2xl -z-10"></div>
+            
+            <div class="overflow-hidden rounded-2xl shadow-2xl">
+                <img src="assets/img/Mami.PNG" alt="Tazeen Husain" class="w-full h-[550px] object-cover grayscale-[30%] hover:grayscale-0 scale-100 hover:scale-105 transition duration-1000 ease-in-out">
+            </div>
+
+            <p class="absolute -bottom-12 left-0 text-[10px] uppercase tracking-[0.3em] text-gray-400 font-medium">
+                Educator • Leader • Lifelong Learner
+            </p>
+        </div>
+    </main>
+
+    <footer class="border-t border-gray-100 mt-24 py-12 bg-white">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-xs text-gray-400 uppercase tracking-widest">© 2026 Tazeen Husain. All rights reserved.</p>
+            <a href="mailto:tazeenhusain27@gmail.com" class="text-xs font-bold text-gray-600 hover:text-black uppercase tracking-widest underline decoration-gray-100 underline-offset-8 decoration-2 hover:decoration-gray-300 transition-all">
+                Get in Touch via Email
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
